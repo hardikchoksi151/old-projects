@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-repeat: no-repeat; */
+    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-fluid{
+    height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+}
+
+.heading h2{
+    font-weight: bold;
+}
+
+.heading p{
+    font-weight: 300;
+}
+
+.form, .form .form-text{
+    text-align: center;
+}
+
+#new-task-btn{
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+#new-task-btn:hover{
+    border-color: white;
+    box-shadow: 0px 0px 50px white;
+    text-shadow: white 10px 0 10px;
+    transition: 0.2s;
+}
+
+#new-task-input{
+    border: 5px solid white;
+    background-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#new-task-input:focus, #new-task-input:hover{
+    background-color: transparent;
+    text-shadow: white 10px 0 10px;
+    box-shadow: 0px 0px 50px white;
+    border-color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.t-header{
+    display: flex;
+    width: 80%;
+    border-bottom: 1px solid black;
+}
+
+.t-header .title,.t-header .edit,.t-header .delete,.t-header .status{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 600;
+    height: inherit;
+}
+
+.title{
+    width: 70%;
+}
+
+.edit{
+    width: 10%;
+    color: white;
+}
+
+.delete{
+    width: 10%;
+    color: white;
+}
+
+.status{
+    width: 10%;
+}
+
+#t-body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 18px; */
+}
+
+.task-container{
+    width: 100%;
+    display: flex;
+}
+
+#t-body .title{
+    width: 70%;
+    font-weight: 550;
+}
+#t-body .edit{
+    width: 10%;
+}
+
+#t-body .edit i{
+    cursor: pointer;
+}
+
+#t-body .delete{
+    width: 10%;
+}
+
+#t-body .delete i{
+    cursor: pointer;
+}
+#t-body .status{
+    width: 10%;
+    font-weight: 500;
+}
+
+.task-container{
+    margin: 18px;
+}
+
+
+.editInput{
+    border: 5px solid white;
+    background-color: transparent;
+    border-radius: 30px;
+    padding-left: 12px;
+    transition: 0.2s;
+}
+
+.editInput:focus, .editInput:hover{
+        outline: none;
+        text-shadow: white 10px 0 10px;
+        box-shadow: 0px 0px 50px white;
+        font-weight: 600;
+        transition: 0.2s;
+}
+
+.edit-btn{
+    padding: 4px 8px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: 0.2s;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.edit-btn:hover{
+    color: white;
+    border-color: white;
+    box-shadow: 0px 0px 50px white;
+    text-shadow: white 10px 0 10px;
+    transition: 0.2s;
+}
+
+.fa-trash:hover, .fa-pen-to-square:hover{
+    color: white;
+    text-shadow: white 2px 0 20px;
+    transition: 0.2s;
+}
+
+.done-btn{
+    padding: 4px 8px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: 0.2s;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.done-btn:hover{
+    border-color: white;
+    box-shadow: 0px 0px 50px white;
+    text-shadow: white 10px 0 10px;
+    transition: 0.2s;
+    color: white;
+}

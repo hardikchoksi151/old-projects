@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - E Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="populateCartPage()">
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="branding">
+            <img src="assets/img/aimdek-logo-transplant.png" alt="">
+            <h2>AIMDek</h2>
+        </div>
+
+        <div class="nav-items">
+            <div class="nav-item" onclick="visitHome()"><span>Home</span></div>
+            <div class="nav-item" onclick="visitAddProduct()"><span>Add Product</span></div>
+            <div class="nav-item active" onclick="visitCart()"><span>Cart</span></div>
+        </div>
+    </div>
+    <!-- navbar -->
+
+    <div class="cart-container">
+
+        <h2></h2>
+
+        <div class="cart-body">
+
+            <div class="board">
+
+                <div class="t-header">
+                    <div class="item">Item</div>
+                    <div class="price">Price</div>
+                    <div class="quantity">Quantity</div>
+                    <div class="total">Total</div>
+                </div>
+
+                <div class="t-body">
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="bill">
+                    <div class="sub-total">
+                        <span class="first">Subtotal:</span>
+                        <span class="second"></span>
+                    </div>
+                    <div class="sales-tax">
+                        <span class="first">Sales Tax:</span>
+                        <span class="second">$0.00</span>
+                    </div>
+                    <div class="grand-total">
+                        <span class="first">Grand total:</span>
+                        <span id="grand-total"></span>
+                    </div>
+                    <div>
+                        <button id="checkout-btn" onclick="checkOut()">Check out</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
